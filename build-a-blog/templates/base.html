@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+        
+    </head>
+    <body>
+        <h1>Batmaniacs!!!<br>Blog</h1>
+
+        <nav>
+            <a href='/blog'>View Blog</a> | 
+            <a href='/newpost'>New Post</a>
+        </nav>
+            
+        <hr />
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
