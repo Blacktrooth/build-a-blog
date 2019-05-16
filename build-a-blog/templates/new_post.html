@@ -4,16 +4,16 @@
 
     <h2>New Blog Entry</h2>
     <form method='POST' action="/newpost">
-        <label for='title'>
-            <font color="goldenrod">New Blog Title:</font><br>
-            <input name="title" type="text" value='{{blog_title}}' />
-            <span class="error">{{title_error}}</span>
+        <label style="color: goldenrod;" for='title'>
+            New Blog Title:<br>
+            <input  name="title" type="text" value='{{blog_title}}' />
+            <span style="color: red;" class="error">{{title_error}}</span>
         </label>
         <br>
-        <label for='body'><font color="goldenrod">Blog Entry Here:</font>
-            <br>
+        <label style="color: goldenrod;" for='body'>
+            Blog Entry Here:<br>
             <textarea name="body" type="text" />{{blog_body}}</textarea>
-            <span class="error">{{body_error}}</span>
+            <span style="color: red;" class="error">{{body_error}}</span>
         </label>
         <br>
         <input type="submit" value='Post New Blog' />
